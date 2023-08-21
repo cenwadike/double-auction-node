@@ -154,5 +154,6 @@ fn testnet_genesis(
 			key: Some(root_key),
 		},
 		transaction_payment: Default::default(),
+		template_module: node_template_runtime::pallet_template::GenesisConfig { auction_index: 0 },
 	}
 }
