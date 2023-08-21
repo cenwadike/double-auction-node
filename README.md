@@ -1,12 +1,18 @@
-# Substrate Node Template
+# Double Auction node 
 
-A fresh [Substrate](https://substrate.io/) node, ready for hacking :rocket:
+## Overview
 
-A standalone version of this template is available for each release of Polkadot in the [Substrate Developer Hub Parachain Template](https://github.com/substrate-developer-hub/substrate-parachain-template/) repository.
-The parachain template is generated directly at each Polkadot release branch from the [Node Template in Substrate](https://github.com/paritytech/substrate/tree/master/bin/node-template) upstream
+This node provides an implementation for on-chain double auctioning based on substrate node template.
 
-It is usually best to use the stand-alone version to start a new project.
-All bugs, suggestions, and feature requests should be made upstream in the [Substrate](https://github.com/paritytech/substrate/tree/master/bin/node-template) repository.
+This is the matching layer of a decentralized marketplace for electrical energy.
+Sellers are categorized based on how much electricity they intend to sell.
+Buyers are also categorized based on how much electricity they intend to buy.
+
+The highest bidding buyer in the same category as a seller is matched
+when the auction period of a seller is over.
+
+The seller has the benefit of getting the best price at a given point in time for their category,
+while the buyer can choose a margin of safety for every buy.
 
 ## Getting Started
 
